@@ -1,78 +1,78 @@
 Qué es la Java Virtual Machine
 
-¿Qué es una Java Virtual Machine?
-    Una virtual machine es una virtualización o simulación de un sistema operativo o de los procesos 
-    que ocurren dentro de este. En nuestro caso, la Java Virtual Machine pertenece al segundo tipo y se 
-    encarga de simular los procesos que ocurren dentro de un sistema operativo. A este tipo de máquinas 
-    virtuales se les llama Process Virtual Machines.
+    ¿Qué es una Java Virtual Machine?
+        Una virtual machine es una virtualización o simulación de un sistema operativo o de los procesos 
+        que ocurren dentro de este. En nuestro caso, la Java Virtual Machine pertenece al segundo tipo y se 
+        encarga de simular los procesos que ocurren dentro de un sistema operativo. A este tipo de máquinas 
+        virtuales se les llama Process Virtual Machines.
 
-¿Qué ventaja nos da?
-    Nos ayuda a manejar los punteros y las referencias de memoria que en otros tipos de lenguaje como C 
-    o C++ hay que manejar manualmente. Para esto se utiliza un proceso llamado garbage collection. 
-    Este proceso se encarga de revisar qué referencia de memoria no se está utilizando para eliminarla y 
-    así reducir la cantidad memoria que puede consumir un programa.
+    ¿Qué ventaja nos da?
+        Nos ayuda a manejar los punteros y las referencias de memoria que en otros tipos de lenguaje como C 
+        o C++ hay que manejar manualmente. Para esto se utiliza un proceso llamado garbage collection. 
+        Este proceso se encarga de revisar qué referencia de memoria no se está utilizando para eliminarla y 
+        así reducir la cantidad memoria que puede consumir un programa.
 
-¿Cómo funciona la JVM?
-    La JVM funciona como un punto medio entre el código que nosotros escribimos y lo que entiende el 
-    sistema operativo del ordenador. Dependiendo del sistema operativo que uses puede variar. 
-    La JVM nos ayuda a que nuestro código se ejecute en Linux, Windows y MacOS. 
-    Nuestro código es convertido por la JVM a un lenguaje que puede entender el sistema operativo 
-    llamado Java Bytecode.
+    ¿Cómo funciona la JVM?
+        La JVM funciona como un punto medio entre el código que nosotros escribimos y lo que entiende el 
+        sistema operativo del ordenador. Dependiendo del sistema operativo que uses puede variar. 
+        La JVM nos ayuda a que nuestro código se ejecute en Linux, Windows y MacOS. 
+        Nuestro código es convertido por la JVM a un lenguaje que puede entender el sistema operativo 
+        llamado Java Bytecode.
 
-    En palabras más simples, nosotros ingresamos código de Kotlin y se transforma en Bytecode. 
-    Este proceso puede ocurrir con otros lenguajes como Java, esto hace que nuestro código de Kotlin 
-    pueda ser utilizado desde Java y el código de Java pueda ser utilizado en Kotlin.
+        En palabras más simples, nosotros ingresamos código de Kotlin y se transforma en Bytecode. 
+        Este proceso puede ocurrir con otros lenguajes como Java, esto hace que nuestro código de Kotlin 
+        pueda ser utilizado desde Java y el código de Java pueda ser utilizado en Kotlin.
 
-Instalar Kotlin
-    Instalar en windows
-        https://www.jetbrains.com/es-es/toolbox-app/
+    Instalar Kotlin
+        Instalar en windows
+            https://www.jetbrains.com/es-es/toolbox-app/
 
-    Instalar en linux
-        La instalación de IntelliJ Idea Community en Linux es muy similar a la que hicimos en Windows, 
-        podemos descargar el programa directamente desde su sitio web 
-        https://www.jetbrains.com/es-es/idea/download/#section=linux 
-        seleccionando la opción Descargar debajo del título de Community.
+        Instalar en linux
+            La instalación de IntelliJ Idea Community en Linux es muy similar a la que hicimos en Windows, 
+            podemos descargar el programa directamente desde su sitio web 
+            https://www.jetbrains.com/es-es/idea/download/#section=linux 
+            seleccionando la opción Descargar debajo del título de Community.
 
-        Después tenemos que extraer los archivos que se encuentran comprimidos dentro del archivo .tar.gz. 
-        Una vez descomprimidos, debemos buscar la carpeta bin, dentro habrá un archivo llamado idea.sh, 
-        el cual tendremos que ejecutar desde una terminal usando el comando ./idea. 
-        Por último tendrás que crear los accesos directos manualmente dependiendo de la distribución de Linux 
-        que utilices.
+            Después tenemos que extraer los archivos que se encuentran comprimidos dentro del archivo .tar.gz. 
+            Una vez descomprimidos, debemos buscar la carpeta bin, dentro habrá un archivo llamado idea.sh, 
+            el cual tendremos que ejecutar desde una terminal usando el comando./idea. 
+            Por último tendrás que crear los accesos directos manualmente dependiendo de la distribución de Linux 
+            que utilices.
 
-        Otra alternativa, que es la que yo te recomiendo, es descargar la Toolbox App de Jetbrains ya 
-        que esta gestionará las versiones que tengas instaladas, y también te ayudará a que tus iconos 
-        siempre estén funcionando de la manera adecuada. Al final es importante tener una linda estética en 
-        tu sistema operativo Linux, ¿no lo crees?
+            Otra alternativa, que es la que yo te recomiendo, es descargar la Toolbox App de Jetbrains ya 
+            que esta gestionará las versiones que tengas instaladas, y también te ayudará a que tus iconos 
+            siempre estén funcionando de la manera adecuada. Al final es importante tener una linda estética en 
+            tu sistema operativo Linux, ¿no lo crees?
 
-        Esta la puedes descargar desde la siguiente url: https://www.jetbrains.com/es-es/toolbox-app, 
-        una vez que la descargues y ejecutes solo tendrás que seleccionar qué entorno de desarrollo quieres 
-        instalar. A menos que tengas una licencia de IntelliJ Idea la opción que debes seleccionar es la de 
-        Community, ya que es la versión gratuita.
+            Esta la puedes descargar desde la siguiente url: https://www.jetbrains.com/es-es/toolbox-app, 
+            una vez que la descargues y ejecutes solo tendrás que seleccionar qué entorno de desarrollo quieres 
+            instalar. A menos que tengas una licencia de IntelliJ Idea la opción que debes seleccionar es la de 
+            Community, ya que es la versión gratuita.
 
-    Kotlin con Visual Studio Code
-        Aunque en este curso vayamos a trabajar con IntelliJ, 
-        ya que es el standard en la industria para trabajar con Kotlin, 
-        puede que si estás empezando a programar no tengas todavía un ordenador lo suficientemente 
-        potente para ejecutar IntelliJ o simplemente prefieras usar Visual Studio Code.
+        Kotlin con Visual Studio Code
+            Aunque en este curso vayamos a trabajar con IntelliJ, 
+            ya que es el standard en la industria para trabajar con Kotlin, 
+            puede que si estás empezando a programar no tengas todavía un ordenador lo suficientemente 
+            potente para ejecutar IntelliJ o simplemente prefieras usar Visual Studio Code.
 
-        En esta guía podrás configurar tu Visual Studio Code para utilizar Kotlin.
+            En esta guía podrás configurar tu Visual Studio Code para utilizar Kotlin.
 
-        Bajar Visual Studio Code
-        Para utilizar Visual Studio Code debes ir al siguiente enlace y descargar la versión dependiendo 
-        de tu sistema operativo:
+            Bajar Visual Studio Code
+            Para utilizar Visual Studio Code debes ir al siguiente enlace y descargar la versión dependiendo 
+            de tu sistema operativo:
 
-        Download Visual Studio Code - Mac, Linux, Windows https://code.visualstudio.com/Download
+            Download Visual Studio Code - Mac, Linux, Windows https://code.visualstudio.com/Download
 
-        Instalar el plugin de Kotlin y Code Runner
-        Ahora que ya has descargado Visual Studio Code, tendrás que instalar el plugin de Kotlin y 
-        Code Runner para esto tienes que ir al marketplace y descargarlos.
+            Instalar el plugin de Kotlin y Code Runner
+            Ahora que ya has descargado Visual Studio Code, tendrás que instalar el plugin de Kotlin y 
+            Code Runner para esto tienes que ir al marketplace y descargarlos.
 
-        Enlace del Marketplace de visual studio code. https://marketplace.visualstudio.com/items?itemName=mathiasfrohlich.Kotlin
+            Enlace del Marketplace de visual studio code. https://marketplace.visualstudio.com/items?itemName=mathiasfrohlich.Kotlin
 
-        Enlace del Marketplace de visual studio code para instalar el code runner. https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
+            Enlace del Marketplace de visual studio code para instalar el code runner. https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
 
-        Ahora puedes hacer clic derecho y ejecutar el código o presionar el botón de play en la esquina 
-        superior derecha.
+            Ahora puedes hacer clic derecho y ejecutar el código o presionar el botón de play en la esquina 
+            superior derecha.
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -92,11 +92,11 @@ Variables y Constantes
         var nombreVariable :  = 1
     
     - val: Es una variable que permite solo la lectura, el cual el valor es asignado la primera vosz no se 
-           se puede cambiar es sililar a una constante.
+           se puede cambiar es similar a una constante.
     
         val nombreVariable = 1
    
-    - const: Se utiliza para declrar constantes y se declara fuera de la funcion principal
+    - const: Se utiliza para declarar constantes y se declara fuera de la función principal
        
         const val NombreConstante (PI)= 3.1416
         fun main(args: Array<String>) {
@@ -120,6 +120,7 @@ Variables y Constantes
         var notnull : int!!                 (int que nunca van a ser null)
 
     Para sumar 2 Strings y que deje un espacio (templeids)= "$variable1 $variable2"
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Modificadores y tipos de datos
@@ -180,10 +181,10 @@ Para imprimir por consola
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Programacion funcional 
-    - Es un paradigma de programacion declarativo
-    - Expresa la logica de un programa de describir lo que hace
-    - Se enfoca en lo que ek program debe hacer no en como lo hace
+Programación funcional 
+    - Es un paradigma de programación declarativo
+    - Expresa la lógica de un programa de describir lo que hace
+    - Se enfoca en lo que el programa debe hacer no en como lo hace
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -205,7 +206,7 @@ Estructuras de control if
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Estructuras de control when
-    Es similar al switch de java en su vercion corta
+    Es similar al switch de java en su versión corta
     
     val nombreVariable = "verde"
     when (nombreVariable){
@@ -235,7 +236,7 @@ Bucles while y do while
     }
 
     do{
-        println("Generando numero aleatorio")
+        println("Generando número aleatorio")
         val numeroAleatorio = (0..10).random
         println (el numero aleatorio es $numeroAleatorio)
     }while(numeroAleatorio > 50)
@@ -247,7 +248,7 @@ Bucles For
     val numeroLista = listof( 1 , 2, 2, 1 ,2,1 )                                # crea una lista con listof
     
     for (numero in 0..100){
-        println(" El numero esta en el rango ")
+        println(" El numero está en el rango ")
     }
 
     for (numero in 0..100)println(" El numero esta en el rango ")
@@ -264,22 +265,204 @@ Bucles For
                                                                                     caracteres
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-Try Catch
+
+Try Catch (excepción)
+
+    try{
+
+    }catch (excepción : Excepción){
+
+    }finally{
+
+    }
+    try{
+        throw nombreexcepción ("mensaje")
+    }catch (excepción : Excepción){
+
+    }finally{
+        
+    }
+
+    val primernumero = 10
+    val segundonumero = 0
+    val resultado = int try {primernumero / segundonumero}catch(excepción : Excepción){0}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Elvis operator (?:)
+
+    Podemos utilizar el elvis operator cuando necesitemos devolver un valor cuando sea null
+
+        var nombre : String = null
+        val caracteresDeNombre : int nombre?.length ?:0
+
+    Podemos asignar el valor por defecto en el ejempló anterior 0
+        https://kotlinlang.org/docs/null-safety.html#elvis-operator
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Listas
+
+    Hay 2 tipos de listas
+        - Las listas inmutables
+            Son aquellas que no pueden tener elementos modificados
+                val listaDeNombres = listof<String>("lucho","rosa","maria")
+                val listaDeNombres = listof("lucho","rosa","maria")
+
+        - Las listas mutables
+            Son aquellas a las cuales se les pueden realizar cambios
+                val listaVacia = mutableListOf<String>()
+
+            Como agregar elementos a una lista
+                listaVacia.add("elemento")
+
+            Cómo obtener elementos de la lista 
+                val valorUsandoGet = listaVacia.get(0)
+
+                val valorUsandoOperador = listaVacia[0]
+
+                val primerValor = listaDeNombres.first()
+
+                val primerValor = listaDeNombres.firstornull()
+
+            Como eliminar elementos de una lista
+                listaVacia.removeAt(0)
+                
+                listaVacia.removeif(caracteres -> caracteres.length > 3)
+
+        https://kotlinlang.org/docs/iterators.html#list-iterators
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Arrays (Arreglos)
+    Son una esttructura de datos que contiene una lista de datos agrupados 
     
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        val myArray = myarratOf()
+
+    Pra poder imprimir en pantalla un array debemos cmvertirlo en una lista
+        println("Array como lista ${myArray,toList()}")
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Como ordenar listas con las funciones que tiene Kotlin 
+    val numerosDeLoteria = listOf(11,12,15,12)
+
+    Para ordenar de mayo a menor
+        val numerosSorted = numerosDeLoteria.dortef()
+
+    Para ordenar de menor a mayor
+        val numerosDeLoteriaDescendentes = numerosDeLoteria.sortedDescending()
+
+    Para ordenar que los ultimos sean los numeros mayores de 50 
+        val ordenarPorMultiplos = numerosDeLoteria.sortedBy{ numero -> numero < 50}
+
+    Para ordenar de forma aleatoria
+        val numerosAleatorios = numerosDeLoteria.shuffled()
+
+    Para prdenal la lista de forma inversa 
+        val numerosEnReversa = numerosDeLoteria.reversed()
+
+    Convierte el int a String colocandole un mensaje  
+        val mensajes de numeros = numerosDeLoteria.map{Numero -> "Tu numero de loteria es $numero"} 
+    Para filtrar elementos 
+        val numerosFiltrados = numerosDeLoteria.filter{numer -> numero > 50} 
+
+    https://kotlinlang.org/docs/map-operations.html
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Maps
+    Son elementos de clave, valor que nos permiten ordenar elementos de una forma que tenemos una clave 
+    que tiene asignado un valor  
+
+        Este tipo de map no se puede Modificadores
+            val edadDeSuperheroes = mapOf (
+                "Batman" to 35, 
+                "Ironman" to 50,
+                "Spiderman" to 15
+            )
+        
+        Este tipo de map es mutable 
+            val edadDeSuperheroesMutable = mutableMapOf(
+                "Batman" to 35, 
+                "Ironman" to 50,
+                "Spiderman" to 15
+            )
+    
+            Para agregar elementos al map
+                 edadDeSuperheroesMutable.put("Hulk,35")
+                 
+                 edadDeSuperheroesMutable["Hulk"]=35
+
+            Para obtener un valor del map
+                val edadIronMan = edadDeSuperheroesMutable["Ironman"]
+
+            Para eliminar elementos
+                edadDeSuperheroesMutable.remove ("valor")
+
+            Para conocer todas las claves de un map
+                println(edadDeSuperheroesMutable.keys)
+            
+            Para conocer todos los valores del map
+                println(edadDeSuperheroesMutable.values)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+Sets 
+    No permite crear elementos reperidos 
+        val vocalesRepetidas  = setOf("a","e","i","o","u","a","i") -> solo guanda los elemntos que no esten repetidos
+
+        val vocalesRepetidas  = mutableSetOf("a","e","i","o","u","a","i")
+
+        vocalesRepetidas.add("a")
+
+        vocalesRepetidas.remove("a")
+          
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+¿Que es una funcion?
+    Una funcion es un codigo que se ejecuta cada vez que lo llamamos.
+    
+    Sintaxis de una función
+
+        Las funciones más básicas se componen de 4 partes.
+
+            - Palabra reservada fun.
+            - Nombre de la función.
+            - Parámetros: Son las variables que le damos a la función para que las use en el código que ejecuta internamente.
+            - Tipo de retorno: Puede tener o no un valor de retorno.
+            - Código: Son las instrucciones que se van a ejecutar al llamar a la función.
+            
+            Ejemplo:
+                fun suma(primerValor : Int, segundoValor: Int):Int{
+                    return primerValor + segundoValor
+                }
+
+        Cuando no queremos que no devuelva ninguin valor usamos la Palabra Unit
+
+                fun imrpimirNombre(nombre : String, apellido: String ){
+                    println("Mi nombre es $nombre y mi apellido es $apellido")
+                }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+Funciones y funciones de extensión
+     Ejemplo
+        fun randomCase (frase : String):{
+            val numeroAleatorio =0..99
+            val resultadoAleatorio = numeroAleatorio.random()
+            return if (resultado.rem(2) == 0){
+                frase.toUppercase()
+            }else{
+                frase.toLowerCase()
+            }
+
+        }
+
+    .rem -> Sirve para obtener el resto de un numero
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
