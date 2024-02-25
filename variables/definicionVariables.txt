@@ -1,0 +1,48 @@
+Declaración de variable
+
+    fun main() {
+        val count: Int = 2
+        println(count)
+    }
+
+    En el programa que ejecutaste, la segunda línea del código indicará lo siguiente:1
+    val count: Int = 2
+
+    Tipo de datos variable
+        Después del nombre de la variable, agrega dos puntos, un espacio y, luego, el tipo de 
+        datos de la variable. Como se mencionó anteriormente, String, Int, Double, Float, y 
+        Boolean son algunos de los tipos básicos de datos de Kotlin. 
+        Recuerda escribir los tipos de datos exactamente como se muestran y comenzar cada uno 
+        con una letra mayúscula.
+
+    Operador de asignación
+        En la declaración de variables, el signo igual (=) sigue al tipo de datos. 
+        El signo igual se denomina operador de asignación. El operador de asignación asigna un 
+        valor a la variable. En otras palabras, el valor del lado derecho del signo igual se 
+        almacena en la variable del lado izquierdo del signo igual.
+
+
+    Para corregir tu programa, agrega un signo de dólar $ antes de la variable count: 
+    "You have $count unread messages." Esta es una plantilla de strings porque contiene 
+    una expresión de plantillas, que en este caso es $count. Una expresión de plantilla es una 
+    expresión que se evalúa como un valor y que luego se sustituye en la string. En este caso, 
+    la expresión de plantilla $count se evalúa como 2, y el 2 se sustituye en la string en la
+    que se encontró la expresión.
+
+    fun main() {
+        val count: Int = 2
+        println("You have $count unread messages.")
+    }
+
+    Nota: Si no proporcionas un valor inicial cuando declaras una variable, debes especificar 
+    el tipo.
+
+        En esta línea de código, no se proporciona un valor inicial, por lo que debes 
+        especificar el tipo de datos:
+
+        val count: Int
+
+        En esta línea de código, se proporciona un valor asignado para que puedas omitir 
+        el tipo de datos:
+
+        val count = 2

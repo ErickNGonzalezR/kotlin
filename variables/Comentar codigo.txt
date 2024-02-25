@@ -1,0 +1,39 @@
+Durante la codificación, otra práctica recomendada es agregar comentarios que describan para 
+qué sirve el código. Los comentarios pueden ayudar a las personas que leen tu código a seguirlo 
+con más facilidad. Dos símbolos de barra diagonal, o //, indican que el texto que sigue en 
+el resto de la línea se considera un comentario, por lo que no se interpreta como código.
+Es común agregar un espacio después de los dos símbolos de barra diagonal.
+
+    // This is a comment.
+
+Un comentario también puede comenzar en el medio de una línea de código. En este ejemplo, 
+height = 1 es una instrucción de codificación normal. Todo lo que aparece después 
+de // o Assume the height is 1 to start with, se interpreta como un comentario y no se 
+considera parte del código.
+
+    height = 1 // Assume the height is 1 to start with.
+
+Si quieres describir el código con más detalle junto con un comentario largo que supere los 
+100 caracteres en una línea, usa un comentario de varias líneas. Inicia el comentario de varias 
+líneas con una barra diagonal (/) y un asterisco (*) como /*. Agrega un asterisco al principio 
+de cada nueva línea del comentario. Por último, termina el comentario con un asterisco y un 
+símbolo de barra diagonal */.
+
+Este programa contiene comentarios de una o varias líneas que describen lo que sucede:
+
+
+    /**
+        * This program displays the number of messages
+        * in the user's inbox.
+    */
+
+    
+fun main() {
+    // Create a variable for the number of unread messages.
+    var count = 10
+    println("You have $count unread messages.")
+
+    // Decrease the number of messages by 1.
+    count--
+    println("You have $count unread messages.")
+}

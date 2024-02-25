@@ -1,0 +1,36 @@
+fun main() {
+    val cartTotal = 0
+    cartTotal = 20
+    println("Total: $cartTotal")
+}
+Ejecuta el programa. Se mostrará un error de compilación.
+
+Observa que el error indica que no se puede reasignar el val. El error se encuentra en la 
+tercera línea del programa, la que intenta cambiar el valor decartTotal 
+variable a 20.. val cartTotal no se puede reasignar a otro valor (20) después de que se 
+le asigne un valor inicial (0)
+
+Si necesitas actualizar el valor de una variable, declara la variable con la palabra 
+clave de Kotlin var, en lugar de val
+
+Palabra clave val: Úsala cuando esperes que el valor de la variable no cambie.
+
+Palabra clave var: Úsala cuando esperes que el valor de la variable pueda cambiar.
+
+Con val, la variable es de solo lectura, lo que significa que solo puedes leer el valor de la 
+variable o acceder a él. Una vez que se establece el valor, no puedes editarlo ni modificarlo. 
+Con var, la variable es mutable, lo que significa que el valor se puede cambiar o modificar. 
+El valor se puede mutar.
+
+Para recordar la diferencia, piensa en val como un valor fijo y en var como una variable. 
+En Kotlin, se recomienda usar la palabra clave val en lugar de la palabra clave var cuando 
+sea posible.
+
+Actualiza la declaración de variable de cartTotal en la línea 2 del programa a fin de usar var 
+en lugar de val. El código debería verse así:
+
+fun main() {
+    var cartTotal = 0
+    cartTotal = 20
+    println("Total: $cartTotal")
+}

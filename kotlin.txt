@@ -1,7 +1,7 @@
 Qué es la Java Virtual Machine
 
     ¿Qué es una Java Virtual Machine?
-        Una virtual machine es una virtualización o simulación de un sistema operativo o de los procesos 
+        Una virtual machine es una virtualization o simulación de un sistema operativo o de los procesos 
         que ocurren dentro de este. En nuestro caso, la Java Virtual Machine pertenece al segundo tipo y se 
         encarga de simular los procesos que ocurren dentro de un sistema operativo. A este tipo de máquinas 
         virtuales se les llama Process Virtual Machines.
@@ -27,7 +27,7 @@ Qué es la Java Virtual Machine
         Instalar en windows
             https://www.jetbrains.com/es-es/toolbox-app/
 
-        Instalar en linux
+        Instalar en Linux
             La instalación de IntelliJ Idea Community en Linux es muy similar a la que hicimos en Windows, 
             podemos descargar el programa directamente desde su sitio web 
             https://www.jetbrains.com/es-es/idea/download/#section=linux 
@@ -192,13 +192,13 @@ Estructuras de control if
     if(nombreVariable.isNotEmpty){
         println("El largo de la variable es: ${nombre.length}")
     } else {
-        println("Error, La variable esta vacia")
+        println("Error, La variable esta vacía")
     }
 
     val mensaje : String = if (nombre.length > 4 ){
         "tu variable es muy larga"
     } else if(nombre.idEmpty()){
-        "Variable vacia"
+        "Variable vacía"
     }else {
         "tienes un nombre corto"
     }
@@ -212,7 +212,7 @@ Estructuras de control when
     when (nombreVariable){
         "verde"             -> println("el color es verde")
         "amarillo"          -> println("el color es amarillo")
-        "rojo","carmesi"    -> println("el color es de la escala de rojos")
+        "rojo","carmesí"    -> println("el color es de la escala de rojos")
         else                -> println("Error, vuelva a escribir el color")
     }
 
@@ -220,7 +220,7 @@ Estructuras de control when
     when (nombreVariable){
         in 200..299    -> println("el valor esta entre 200 y 299")
         in 300..400    -> println("el valor esta entre 300 y 400")
-        in 400..500    ->println("Algo ha fallado")
+        in 400..500    -> println("Algo ha fallado")
         else           -> println("Error, el valor no esta en rango")
 
     in significa rango 
@@ -292,7 +292,7 @@ Try Catch (excepción)
 
 Elvis operator (?:)
 
-    Podemos utilizar el elvis operator cuando necesitemos devolver un valor cuando sea null
+    Podemos utilizar el Elvis operator cuando necesitemos devolver un valor cuando sea null
 
         var nombre : String = null
         val caracteresDeNombre : int nombre?.length ?:0
@@ -312,61 +312,61 @@ Listas
 
         - Las listas mutables
             Son aquellas a las cuales se les pueden realizar cambios
-                val listaVacia = mutableListOf<String>()
+                val listaVacía = mutableListOf<String>()
 
             Como agregar elementos a una lista
-                listaVacia.add("elemento")
+                listaVacía.add("elemento")
 
             Cómo obtener elementos de la lista 
-                val valorUsandoGet = listaVacia.get(0)
+                val valorUsandoGet = listaVacía.get(0)
 
-                val valorUsandoOperador = listaVacia[0]
+                val valorUsandoOperador = listaVacía[0]
 
                 val primerValor = listaDeNombres.first()
 
                 val primerValor = listaDeNombres.firstornull()
 
             Como eliminar elementos de una lista
-                listaVacia.removeAt(0)
+                listaVacía.removeAt(0)
                 
-                listaVacia.removeif(caracteres -> caracteres.length > 3)
+                listaVacía.removeif(caracteres -> caracteres.length > 3)
 
         https://kotlinlang.org/docs/iterators.html#list-iterators
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Arrays (Arreglos)
-    Son una esttructura de datos que contiene una lista de datos agrupados 
+    Son una estructura de datos que contiene una lista de datos agrupados 
     
         val myArray = myarratOf()
 
-    Pra poder imprimir en pantalla un array debemos cmvertirlo en una lista
+    Pra poder imprimir en pantalla un array debemos convertirlo en una lista
         println("Array como lista ${myArray,toList()}")
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Como ordenar listas con las funciones que tiene Kotlin 
-    val numerosDeLoteria = listOf(11,12,15,12)
+    val númerosDeLotería = listOf(11,12,15,12)
 
     Para ordenar de mayo a menor
-        val numerosSorted = numerosDeLoteria.dortef()
+        val númerosSorted = númerosDeLotería.dortef()
 
     Para ordenar de menor a mayor
-        val numerosDeLoteriaDescendentes = numerosDeLoteria.sortedDescending()
+        val númerosDeLoteríaDescendentes = númerosDeLotería.sortedDescending()
 
-    Para ordenar que los ultimos sean los numeros mayores de 50 
-        val ordenarPorMultiplos = numerosDeLoteria.sortedBy{ numero -> numero < 50}
+    Para ordenar que los últimos sean los números mayores de 50 
+        val ordenarPorMúltiplos = númerosDeLotería.sortedBy{ numero -> numero < 50}
 
     Para ordenar de forma aleatoria
-        val numerosAleatorios = numerosDeLoteria.shuffled()
+        val númerosAleatorios = númerosDeLotería.shuffled()
 
-    Para prdenal la lista de forma inversa 
-        val numerosEnReversa = numerosDeLoteria.reversed()
+    Para ordenar la lista de forma inversa 
+        val númerosEnReversa = númerosDeLotería.reversed()
 
-    Convierte el int a String colocandole un mensaje  
-        val mensajes de numeros = numerosDeLoteria.map{Numero -> "Tu numero de loteria es $numero"} 
+    Convierte el int a String colocándole un mensaje  
+        val mensajes de números = númerosDeLotería.map{Numero -> "Tu numero de lotería es $numero"} 
     Para filtrar elementos 
-        val numerosFiltrados = numerosDeLoteria.filter{numer -> numero > 50} 
+        val númerosFiltrados = númerosDeLotería.filter{numer -> numero > 50} 
 
     https://kotlinlang.org/docs/map-operations.html
 
@@ -410,7 +410,7 @@ Maps
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Sets 
-    No permite crear elementos reperidos 
+    No permite crear elementos repetidos 
         val vocalesRepetidas  = setOf("a","e","i","o","u","a","i") -> solo guanda los elemntos que no esten repetidos
 
         val vocalesRepetidas  = mutableSetOf("a","e","i","o","u","a","i")
@@ -421,8 +421,8 @@ Sets
           
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-¿Que es una funcion?
-    Una funcion es un codigo que se ejecuta cada vez que lo llamamos.
+¿Que es una función?
+    Una función es un código que se ejecuta cada vez que lo llamamos.
     
     Sintaxis de una función
 
@@ -430,7 +430,8 @@ Sets
 
             - Palabra reservada fun.
             - Nombre de la función.
-            - Parámetros: Son las variables que le damos a la función para que las use en el código que ejecuta internamente.
+            - Parámetros: Son las variables que le damos a la función para que las use en el código que 
+                ejecuta internamente.
             - Tipo de retorno: Puede tener o no un valor de retorno.
             - Código: Son las instrucciones que se van a ejecutar al llamar a la función.
             
@@ -439,9 +440,9 @@ Sets
                     return primerValor + segundoValor
                 }
 
-        Cuando no queremos que no devuelva ninguin valor usamos la Palabra Unit
+        Cuando no queremos que no devuelva ningún valor usamos la Palabra Unit
 
-                fun imrpimirNombre(nombre : String, apellido: String ){
+                fun imprimirNombre(nombre : String, apellido: String ){
                     println("Mi nombre es $nombre y mi apellido es $apellido")
                 }
 
@@ -449,7 +450,31 @@ Sets
 
 Funciones y funciones de extensión
      Ejemplo
-        fun randomCase (frase : String):{
+
+        val fraseAleatoria = "Hola Como Estas"
+        println(randomCase(fraseAleatoria))
+            
+        Función que devuelve en mayúscula o en minúscula
+            fun randomCase (frase : String):String{
+                val numeroAleatorio =0..99
+                val resultadoAleatorio = numeroAleatorio.random()
+                return if (resultado.rem(2) == 0){
+                    frase.toUppercase()
+                }else{
+                    frase.toLowerCase()
+                }
+            }
+    
+    -----------------------------------------------------------------
+
+        val fraseAleatoria = "Hola Como Estas"
+        imprimirFrase(randomCase(fraseAleatoria))
+    
+        fun imprimirFrase(frase : String){
+            println("Tu frase es: $frase")
+        }
+            
+        fun randomCase (frase : String):String{
             val numeroAleatorio =0..99
             val resultadoAleatorio = numeroAleatorio.random()
             return if (resultado.rem(2) == 0){
@@ -457,12 +482,152 @@ Funciones y funciones de extensión
             }else{
                 frase.toLowerCase()
             }
+        }
+        ---------------------------------------------------------------- 
+    funciones de extension   
 
+        val fraseAleatoria = "Hola Como Estas".randomCase
+        imprimirFrase(fraseAleatoria)
+    
+        fun imprimirFrase(frase : String){
+            println("Tu frase es: $frase")
+        }
+            
+        fun String.randomCase ():String{
+            val numeroAleatorio =0..99
+            val resultadoAleatorio = numeroAleatorio.random()
+            return if (resultado.rem(2) == 0){
+                this.toUppercase()
+            }else{
+                this.toLowerCase()
+            }
         }
 
     .rem -> Sirve para obtener el resto de un numero
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Tipos de Parámetros en las funciones 
+
+    Fun main {
+        imprimirNombre(nombre = Erick, apellido = Gonzalez)
+    }
+    fun  imprimirNombre (nombre: String, apellido:String){
+        println("Tu nombre es: $nombre $apellido")
+    }
+    -------------------------------------------------------
+
+    Fun main {
+    imrpimirNombre(nombre = Erick, apellido = Gonzalez)
+    }
+    fun  imrpimirNombre (nombre: String, segundoNombre :String ="", apellido:String){
+        println("Tu nombre es: $nombre $apellido")
+    }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Lambdas
+    Son funciones anónimas 
+
+        val myLambda: (String) -> Int = { it.length} 
+
+        val myLambda: (String) -> Int = { valor -> valor.length} 
+        val lambdaEjecutada = myLambda("Hola mundo")
+        println(lambdaEjecutada)
+
+        val saludos = listOf("Hello", "Hola", "Ciao")
+        val longitudDeSaludo = salidos.map (myLambda)
+        println(longitudDeSaludo)
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+High Order functions
+    Son funciones que reciben funciones como parámetro
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ScopeFunction (https://kotlinlang.org/docs/scope-functions.html#with)
+    Son funciones que permiten realizar ciertas operaciones de una forma mas dinámica, con una sintaxis 
+    mas concisa 
+
+    Let 
+        Ejecuta un codigo solamente cuando la variable null no sea null y ejecutar el codigo 
+        cuando la variable tenga un valor asignado
+        fun main(args: {
+            var nombre : String? = null
+            nombre?.let {
+                valor -> println("nombre no es nulo. Es $valor")
+            }
+            nombre = "Giuseppe"
+            nombre?.let{
+                valor -> println(El nombre no es null, es $valor")
+            }
+        }
+
+    ---------------------------------------------------------------------------------------------------------
+    with
+        Nos permite acceder a las propiedades de una variable que le pasemos como parámetro, de esta 
+        forma podemos evitar repetir llamar a la variable en varias lineas si no que simplemente utilizamos 
+        this o utilizamos directamente sus propiedades 
+
+
+        fun main(args: Array<String>)
+            val colores = listOf("Azul","Amarillo ", "Rojo"()
+            with(colores) { 
+                println("Nuestros colores son $this")
+                println("Esta lista tiene una cantidad de colores de $size")
+
+    ---------------------------------------------------------------------------------------------------------------------
+    Run 
+        Ejecuta una serie de operaciones luego de declarar una variable 
+
+
+        fun main(args: Array<String>) {
+            val moviles = mutableListOf("Google Pixel 2XL", "Google Pixel 4a", "Huawei Redmi 9", "Xiaomi mi a3")
+            .run {
+                removeIf{
+                    movil -> movil.contains("Google")
+                    this
+                }
+            }
+            println(moviles)
+        }
+
+
+    ------------------------------------------------------------------------------------------------------------
+
+    Apply
+        Nos permite realizar operaciones sobre una variable y luego devolver el valor 
+        alcontario de la función run tuvimos que devolver el this al final en este caso no 
+        hace falta porque la función apply lo devuelve automáticamente, también 
+        si la combinamos con la función de safecast crea una función de apply segura esto a 
+        causa de que la variable null no puede ejecutar ese cambio de propiedades a cambio
+        de que ya se le haya asignado un valor lo cual nos permite evitar nullPointerException
+
+
+        fun main(args: Array<String>) {
+            val moviles = mutableListOf("Google Pixel 2XL", "Google Pixel 4a", "Huawei Redmi 9", "Xiaomi mi a3")
+            .apply {
+                removeIf{
+                    movil -> movil.contains("Google")
+                    this
+                }
+            }
+            println(moviles)
+
+
+            val colores = MutableList<String>? = null
+            colores?,apply { 
+                println("Nuestros colores son $this")
+                println("Esta lista tiene una cantidad de colores de $size")
+        }
+
+
+    --------------------------------------------------------------------------------------------------------
+
+    Also 
+        Nos permite obtener una variable luego ejecutar un código sobre esa variable y luego 
+        devolverla como como parámetro para que pueda volver a ser utilizada por una función mas adelante
+
+        fun main(args: Array<String>) {
+            val moviles = mutableListOf("Google Pixel 2XL", "Google Pixel 4a", "Huawei Redmi 9", "Xiaomi mi a3")
+            .also {
+            lista -> println("El valor original de la lista es $lista")
+            }.asReversed()
+            println(moviles)
+        }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

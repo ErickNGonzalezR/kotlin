@@ -1,0 +1,42 @@
+Tipos de datos
+    Cuando decidas qué aspectos de tu app pueden ser variables, es importante que especifiques 
+    qué tipo de datos se pueden almacenar en esas variables. En Kotlin, existen algunos tipos 
+    de datos básicos comunes. En la siguiente tabla, se muestra un tipo de datos diferente en 
+    cada fila. Para cada tipo de datos, se incluye una descripción del tipo de datos que puede 
+    contener y valores de ejemplo.
+
+    Tipo de datos de Kotlin     Qué tipo de datos puede contener    Ejemplos de valores literales
+
+    String                      Texto                               "Add contact"
+                                                                    "Search"
+                                                                    "Sign in"
+
+    Int                         Número entero                       32
+                                                                    1293490
+                                                                    -59281
+
+    Double                      Número decimal                      2.0
+                                                                    501.0292
+                                                                    -31723.99999
+
+    Float                       Número decimal (que es              5.0f 
+                                menos preciso que un Double).       -1630.209f 
+                                Tiene un f o F al final del         1.2940278F 
+                                número.
+
+    Boolean                     true o false. Usa este tipo de      true 
+                                datos cuando solo haya dos          false 
+                                valores posibles. Ten en cuenta 
+                                que true y false son palabras 
+                                clave en Kotlin.
+
+        
+    
+
+
+
+fun main() {
+    println("Say \"hello\"")
+}
+
+Say "hello"

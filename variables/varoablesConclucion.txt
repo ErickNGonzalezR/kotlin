@@ -1,0 +1,31 @@
+Todos estos conceptos son componentes fundamentales de tu recorrido para convertirte en 
+desarrollador.
+
+Nos vemos en el siguiente codelab.
+
+Resumen
+    - Una variable es un contenedor de un único dato.
+    - Debes declarar una variable antes de usarla.
+    - Usa la palabra clave val para definir una variable que sea de solo lectura, en la que el 
+      valor no puede cambiar una vez que se asigne.
+    - Usa la palabra clave var a fin de definir una variable que sea mutable o modificable.
+    - En Kotlin, se prefiere usar val en lugar de var cuando sea posible.
+    - Para declarar una variable, comienza con la palabra clave val o var. Luego, especifica 
+      el nombre de la variable, el tipo de datos y el valor inicial. Por ejemplo: 
+      val count: Int = 2.
+    - Con la inferencia de tipo, omite el tipo de datos en la declaración de variable si se 
+      proporciona un valor inicial.
+    - Algunos tipos comunes de datos de Kotlin incluyen: Int, String, Boolean, Float y Double.
+    - Usa el operador de asignación (=) para asignar un valor a una variable durante la 
+      declaración de la variable o cuando se actualiza la variable.
+    - Solo puedes actualizar una variable que se haya declarado como variable mutable (con var).
+    - Usa el operador de incremento (++) o el operador de disminución (--) para aumentar o 
+      disminuir el valor de una variable de número entero en 1, respectivamente.
+    - Usa el símbolo + para concatenar strings. También puedes concatenar variables de otros 
+      tipos de datos, como Int y Boolean, a Strings.
+
+    variables                       ->  https://play.kotlinlang.org/byExample/01_introduction/03_Variables
+    tipos de datos                  ->  https://kotlinlang.org/docs/basic-types.html
+    plantillas de strings           ->  https://kotlinlang.org/docs/basic-syntax.html#string-templates
+    Palabras clave y operadores     ->  https://kotlinlang.org/docs/keyword-reference.html
+    Sintaxis básica                 ->  https://kotlinlang.org/docs/basic-syntax.html
