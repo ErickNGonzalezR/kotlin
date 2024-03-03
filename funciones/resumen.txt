@@ -1,0 +1,20 @@
+Resumen
+- Las funciones se definen con la palabra clave fun y contienen fragmentos de código 
+  reutilizables.
+
+- Las funciones facilitan el mantenimiento de los programas más grandes y evitan la 
+  repetición innecesaria de código.
+
+- Las funciones pueden mostrar un valor que puedes almacenar en una variable para usarlo 
+  más tarde.
+
+- Las funciones pueden tomar parámetros, que son variables disponibles dentro del cuerpo 
+  de una función.
+
+- Los argumentos son los valores que pasas cuando llamas a una función.
+
+- Puedes nombrar argumentos cuando llamas a una función. Cuando usas argumentos con nombre, 
+  puedes reordenarlos sin afectar el resultado.
+
+- Puedes especificar un argumento predeterminado que te permita omitirlo cuando llames a una 
+  función.

@@ -1,0 +1,113 @@
+Cuando defines una función, puedes especificar el tipo de datos del valor que deseas que se 
+muestre. Para especificar el tipo de datos que se muestra, se colocan dos puntos (:) después 
+de los paréntesis y el nombre de un tipo (Int, String, etc.) después de los dos puntos. 
+Se coloca un solo espacio después del tipo de datos que se muestra y antes de la llave de 
+apertura. Dentro del cuerpo de la función, después de todas las sentencias, usa una sentencia
+return para especificar el valor que desea que muestre la función. Una sentencia return 
+consiste en la palabra clave return, seguida del valor, como una variable, que quieres que 
+muestre la función como resultado.
+
+Sintaxis
+    fun name () :return type{
+        body
+        return statement
+    }
+
+El tipo Unit
+    De forma predeterminada, si no se especifica un tipo de datos que se muestra, 
+    el predeterminado es Unit. Unit significa que la función no muestra ningún valor. 
+    Unit es equivalente a los tipos nulos de datos que se muestran en otros lenguajes 
+    (void en Java y C, tupla Void/vacía () en Swift; None en Python, etc.). Cualquier 
+    función que no muestre un valor muestra Unit de forma implícita. Si deseas observar 
+    este comportamiento, modifica tu código para que muestre Unit.
+    - En la declaración de la función para birthdayGreeting(), agrega dos puntos después 
+      del paréntesis de cierre y especifica el tipo de datos que se muestra como Unit.
+       
+        fun main() {
+            birthdayGreeting()
+        }
+
+        fun birthdayGreeting(): Unit {
+            println("Happy Birthday, Rover!")
+            println("You are now 5 years old!")
+        }
+
+    - Ejecuta el código y observa que todo continúa funcionando.
+        Happy Birthday, Rover!
+        You are now 5 years old!
+
+Cómo mostrar String de birthdayGreeting()
+    A fin de demostrar cómo una función puede mostrar un valor, deberás modificar la 
+    función birthdayGreeting() para que muestre una string, en lugar de simplemente imprimir 
+    el resultado.
+        - Reemplaza el tipo de datos que se muestra Unit por String
+            
+            fun birthdayGreeting(): String {
+                println("Happy Birthday, Rover!")
+                println("You are now 5 years old!")
+            }
+        
+        - Ejecuta tu código. Se mostrará un error. Si declaras un tipo de datos que se muestra 
+          para una función (p. ej., String), esa función debe incluir una sentencia return.
+
+            A 'return' expression required in a function with a block body ('{...}')
+
+        - Solo puedes mostrar una cadena de una función, no dos. Reemplaza las sentencias println() 
+          por dos variables, nameGreeting y ageGreeting, con la palabra clave val. Como quitaste 
+          las llamadas a println() de birthdayGreeting(), llamar a birthdayGreeting() no imprimirá 
+          nada.
+        
+            fun birthdayGreeting(): String {
+                val nameGreeting = "Happy Birthday, Rover!"
+                val ageGreeting = "You are now 5 years old!"
+            }
+        
+        - Con la string que le da formato a la sintaxis que aprendiste en un codelab anterior, 
+          agrega una sentencia return para mostrar una string de la función que incluye ambos saludos.
+
+         Para dar formato a los saludos en una línea separada, también debes usar el carácter de
+         escape \n. Es similar al carácter de escape \" que aprendiste en un codelab anterior. 
+         El carácter \n se reemplaza por una línea nueva, de modo que los dos saludos estén en una 
+         línea separada. 
+
+            fun birthdayGreeting(): String {
+                val nameGreeting = "Happy Birthday, Rover!"
+                val ageGreeting = "You are now 5 years old!"
+                return "$nameGreeting\n$ageGreeting"
+            }
+
+        - En main(), dado que birthdayGreeting() muestra un valor, puedes almacenar el resultado 
+          en una variable de string. Declara una variable greeting mediante val para almacenar 
+          el resultado de la llamada a birthdayGreeting().
+
+            fun main() {
+                val greeting = birthdayGreeting()
+            }
+
+        - En main(), llama a println() para imprimir la string greeting. La función main() ahora 
+          debería verse de la siguiente manera:
+
+            fun main() {
+                val greeting = birthdayGreeting()
+                println(greeting)
+            }
+
+        - Ejecuta tu código y, luego, observa que el resultado sea el mismo que antes: Mostrar un 
+          valor te permite almacenar el resultado en una variable, pero ¿qué crees que sucede si 
+          llamas a la función birthdayGreeting() dentro de la función println()?
+
+            Happy Birthday, Rover!
+            You are now 5 years old!
+
+        - Quita la variable y, luego, pasa el resultado de la llamada a la función birthdayGreeting() 
+          a la función println():
+
+            fun main() {
+                println(birthdayGreeting())
+            }
+
+        - Ejecuta tu código y observa el resultado. El valor de muestra de la llamada a 
+          birthdayGreeting() se pasa directamente a println().
+
+            Happy Birthday, Rover!
+            You are now 5 years old!

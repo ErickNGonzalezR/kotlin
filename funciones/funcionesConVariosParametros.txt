@@ -1,0 +1,80 @@
+ También puedes definir más de un parámetro para una función, incluso parámetros de diferentes 
+ tipos de datos. En esta sección, modificarás el saludo de modo que también cambie en 
+ función de la edad del perro.
+
+Sintaxis
+    fun function name (firts parameter,second parameter, ....)
+
+Las definiciones de los parámetros están separadas con comas. De manera similar, cuando 
+llamas a una función con varios parámetros, también separas los argumentos que se pasaron 
+con comas. Veamos esto en acción.
+
+    - Después del parámetro name, agrega un parámetro age de tipo Int a la función 
+      birthdayGreeting(). La declaración de la función nueva debe tener los dos parámetros, 
+      name y age, separados con comas:
+
+        fun birthdayGreeting(name: String, age: Int): String {
+            val nameGreeting = "Happy Birthday, $name!"
+            val ageGreeting = "You are now 5 years old!"
+            return "$nameGreeting\n$ageGreeting"
+        }
+
+    - La nueva string de saludo debe usar el parámetro age. Actualiza la función 
+      birthdayGreeting() para usar el valor del parámetro age en la string ageGreeting.
+
+        fun birthdayGreeting(name: String, age: Int): String {
+            val nameGreeting = "Happy Birthday, $name!"
+            val ageGreeting = "You are now $age years old!"
+            return "$nameGreeting\n$ageGreeting"
+        }
+
+    - Ejecuta la función y, luego, observa los errores en el resultado:
+
+        No value passed for parameter 'age'
+        No value passed for parameter 'age'
+
+    - Modifica las dos llamadas a la función birthdayGreeting() en main() a fin de pasar 
+      una edad diferente para cada perro. Pasa 5 para la edad de Rover y 2 para la edad 
+      de Rex.
+
+        fun main() {
+            println(birthdayGreeting("Rover", 5))
+            println(birthdayGreeting("Rex", 2))
+        }
+
+    - Ejecuta tu código. Ahora que pasaste los valores para ambos parámetros, el resultado 
+      debería reflejar el nombre y la edad de cada perro cuando llames a la función.
+
+        Happy Birthday, Rover!
+        You are now 5 years old!
+        Happy Birthday, Rex!
+        You are now 2 years old!
+
+
+
+    fun main() {
+        println(birthdayGreeting("Rover", 5))
+        println(birthdayGreeting("Rex", 2))
+    }
+    fun birthdayGreeting(name: String, age: Int): String {
+        val nameGreeting = "Happy Birthday, $name!"
+        val ageGreeting = "You are now $age years old!"
+        return "$nameGreeting\n$ageGreeting"
+    }
+
+Firma de la función
+    Hasta ahora, viste cómo definir el nombre de la función, las entradas (parámetros) y los 
+    resultados. El nombre de la función y sus entradas (parámetros) se conocen colectivamente 
+    como firma de la función. La firma de la función consta de todo lo que está antes del tipo 
+    de datos que se muestra y se indica en el siguiente fragmento de código.
+
+        fun birthdayGreeting(name: String, age: Int)
+
+    Con frecuencia, verás estos términos en la documentación para código que escriben otros 
+    desarrolladores. La firma de la función te indica el nombre de la función y los tipos de 
+    datos que se pueden pasar.
+
+    Ahora aprendiste un montón sobre la sintaxis nueva para definir funciones. Consulta el 
+    siguiente diagrama para obtener un resumen de la sintaxis de las funciones.
+
+https://developer.android.com/static/codelabs/basic-android-kotlin-compose-functions/img/51dad3b43e93abb4_856.png?hl=es-419

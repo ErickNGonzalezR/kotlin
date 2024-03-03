@@ -1,0 +1,94 @@
+Un parámetro especifica el nombre de una variable y un tipo de datos que puedes pasar a una 
+función como datos para acceder dentro de esta. Los parámetros se declaran entre paréntesis 
+después del nombre de la función.
+
+Sintaxis
+    fun name (parameters): return type {
+        body
+    }
+
+Cada parámetro consiste en un nombre de variable y un tipo de datos, separados por dos puntos y 
+un espacio. Si hay varios parámetros, se separan con una coma.
+
+Por el momento, la función birthdayGreeting() solo se puede usar para saludar a Rover. 
+Agregarás un parámetro a la función birthdayGreeting() para que puedas saludar con cualquier 
+nombre que pases a la función.
+    - Dentro de los paréntesis de la función birthdayGreeting(), agrega un parámetro name de 
+      tipo String con la sintaxis name: String
+
+        fun birthdayGreeting(name: String): String {
+            val nameGreeting = "Happy Birthday, Rover!"
+            val ageGreeting = "You are now 5 years old!"
+            return "$nameGreeting\n$ageGreeting"
+        }
+    
+        El parámetro definido en el paso anterior funciona como una variable declarada con la 
+        palabra clave val. Su valor se puede usar en cualquier parte de la función 
+        birthdayGreeting(). En un codelab anterior, aprendiste cómo insertar el valor de una 
+        variable en una string.
+
+    - Reemplaza Rover en la string nameGreeting por el símbolo $ seguido del parámetro 
+      name.Reemplaza Rover en la string nameGreeting por el símbolo $ seguido del parámetro name.
+
+        fun birthdayGreeting(name: String): String {
+            val nameGreeting = "Happy Birthday, $name!"
+            val ageGreeting = "You are now 5 years old!"
+            return "$nameGreeting\n$ageGreeting"
+        }
+
+    - Ejecuta tu código y observa el error. Ahora que declaraste el parámetro name, debes pasar 
+    un String cuando llames a birthdayGreeting(). Cuando llamas a una función que toma un 
+    parámetro, debes pasar un argumento a la función. El argumento es el valor que pasas, 
+    como "Rover".
+
+        No value passed for parameter 'name'
+
+    - Pasa "Rover" a la llamada birthdayGreeting() en main().
+
+        fun main() {
+            println(birthdayGreeting("Rover"))
+        }
+
+    - Ejecuta tu código y observa el resultado. El nombre Rover proviene del parámetro name.
+
+        Happy Birthday, Rover!
+        You are now 5 years old!
+
+    - Como birthdayGreeting() toma un parámetro, puedes llamarlo con un nombre que no sea 
+      Rover. Agrega otra llamada a birthdayGreeting() dentro de la llamada a println() y 
+      pasa el argumento "Rex".
+
+        println(birthdayGreeting("Rover"))
+        println(birthdayGreeting("Rex"))
+
+    - Vuelve a ejecutar el código y, luego, observa que el resultado difiere en función del 
+      argumento que se pasó a birthdayGreeting().
+
+        Happy Birthday, Rover!
+        You are now 5 years old!
+        Happy Birthday, Rex!
+        You are now 5 years old!
+
+
+
+    fun main() {
+        println(birthdayGreeting("Rover"))
+        println(birthdayGreeting("Rex"))
+    }
+    fun birthdayGreeting(name: String): String {
+        val nameGreeting = "Happy Birthday, $name!"
+        val ageGreeting = "You are now 5 years old!"
+        return "$nameGreeting\n$ageGreeting"
+    }
+
+
+Nota: Si bien con frecuencia los usas de forma indistinta, un parámetro y un argumento no 
+      son lo mismo. Cuando se define una función, se definen los parámetros que se le pasarán 
+      cuando se la llame. Cuando llamas a una función, debes pasar los argumentos para los 
+      parámetros. Los parámetros son las variables a las que puede acceder la función, como 
+      una variable name, mientras que los argumentos son los valores reales que pasas, como 
+      la string "Rover".
+
+Advertencia: A diferencia de algunos lenguajes, como Java, en los que una función puede cambiar 
+             el valor que se pasa a un parámetro, los parámetros en Kotlin son inmutables. 
+             No puedes reasignar el valor de un parámetro desde el cuerpo de la función.    

@@ -1,0 +1,56 @@
+Sintaxis
+
+fun Name (){
+    body
+}
+
+La definición de una función comienza con la palabra clave fun, seguida del nombre de la función, 
+un conjunto de paréntesis de apertura y cierre, y un conjunto de llaves de apertura y cierre.
+Entre llaves, se muestra el código que se ejecutará cuando se llame a la función.
+
+Crearás una función nueva para quitar las dos declaraciones println() de la función main().
+
+    fun main() {
+        println("Happy Birthday, Rover!")
+        println("You are now 5 years old!")
+    }
+
+Después de la función main(), define una nueva función llamada birthdayGreeting(). 
+Esta función se declara con la misma sintaxis que la función main().
+
+    fun main() {
+        println("Happy Birthday, Rover!")
+        println("You are now 5 years old!")
+    }
+
+    fun birthdayGreeting() {
+
+    }
+
+Mueve las dos declaraciones println() de main() a las llaves de la función birthdayGreeting().
+
+    fun main() {
+
+    }
+
+    fun birthdayGreeting() {
+        println("Happy Birthday, Rover!")
+        println("You are now 5 years old!")
+    }
+
+En la función main(), llama a la función birthdayGreeting(). El código finalizado debería verse 
+de la siguiente manera:
+
+    fun main() {
+        birthdayGreeting()
+    }
+
+    fun birthdayGreeting() {
+        println("Happy Birthday, Rover!")
+        println("You are now 5 years old!")
+    }
+
+Ejecuta tu código. Debería verse el siguiente resultado:
+
+    Happy Birthday, Rover!
+    You are now 5 years old!

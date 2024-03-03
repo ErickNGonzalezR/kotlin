@@ -1,0 +1,58 @@
+Los parámetros de la función también pueden especificar argumentos predeterminados. 
+Quizás Rover es tu perro favorito, o esperas que se llame a una función con argumentos 
+específicos en la mayoría de los casos. Cuando llamas a una función, puedes decidir omitir 
+los argumentos para los que haya un valor predeterminado, en cuyo caso se usa el 
+predeterminado.
+
+Para agregar un argumento predeterminado, agrega un operador de asignación (=) después del tipo 
+de datos para el parámetro y configuraron del mismo modo que a un valor. Modifica tu código 
+para usar un argumento predeterminado.
+
+    - En la función birthdayGreeting(), establece el parámetro name en el valor 
+      predeterminado "Rover"
+
+        fun birthdayGreeting(name: String = "Rover", age: Int): String {
+            return "Happy Birthday, $name! You are now $age years old!"
+        }
+
+    - En la primera llamada a birthdayGreeting() para Rover en main(), establece el 
+      argumento con nombre age en 5. Como el parámetro age se define después de name, debes 
+      usar el argumento con nombre age. Sin los argumentos con nombre, Kotlin supone que el 
+      orden de los argumentos es el mismo en el que se definen los parámetros. El 
+      argumento con nombre se usa a fin de garantizar que Kotlin espere un Int para el 
+      parámetro age.
+
+        println(birthdayGreeting(age = 5))
+        println(birthdayGreeting("Rex", 2))
+
+    - Ejecuta tu código. La primera llamada a la función birthdayGreeting() muestra "Rover" 
+      como nombre porque nunca lo especificaste. La segunda llamada a birthdayGreeting() 
+      todavía usa el valor Rex, que pasaste para name
+
+        Happy Birthday, Rover! You are now 5 years old!
+        Happy Birthday, Rex! You are now 2 years old!
+
+    - Quita el nombre de la segunda llamada a la función birthdayGreeting(). 
+      Una vez más, debido a que se omite name, debes usar un argumento con nombre para 
+      la edad.
+
+        println(birthdayGreeting(age = 5))
+        println(birthdayGreeting(age = 2))
+
+    - Ejecuta tu código. Luego, observa que ambas llamadas a birthdayGreeting() imprimen 
+      "Rover" como nombre porque no se pasa ningún argumento con nombre.
+
+        Happy Birthday, Rover! You are now 5 years old!
+        Happy Birthday, Rover! You are now 2 years old!
+
+
+
+
+
+fun main() {
+    println(birthdayGreeting(age = 5))
+	println(birthdayGreeting(age = 2))
+}
+fun birthdayGreeting(name: String = "Rover", age: Int): String {
+    return "Happy Birthday, $name! You are now $age years old!"
+}

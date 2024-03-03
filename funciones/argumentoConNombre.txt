@@ -1,0 +1,38 @@
+- Modifica la llamada para que Rex use argumentos con nombre como se muestra en este 
+  fragmento de código. Para ello, incluye el nombre del parámetro seguido de un signo 
+  igual y, luego, el valor (p. ej., name = "Rex").
+
+    println(birthdayGreeting(name = "Rex", age = 2))
+
+- Ejecuta el código y, luego, observa que el resultado no haya cambiado:
+
+    Happy Birthday, Rover!
+    You are now 5 years old!
+    Happy Birthday, Rex!
+    You are now 2 years old!
+
+- Reordena los argumentos con nombres. Por ejemplo, coloca el argumento con 
+  nombre age antes del argumento con nombre name.
+
+  println(birthdayGreeting(age = 2, name = "Rex"))
+
+- Ejecuta el código y observa que el resultado sigue siendo el mismo. Si bien cambiaste 
+  el orden de los argumentos, se pasan los mismos valores para los mismos parámetros.
+
+    Happy Birthday, Rover!
+    You are now 5 years old!
+    Happy Birthday, Rex!
+    You are now 2 years old!
+
+
+
+fun main() {
+    println(birthdayGreeting("Rover", 5))
+    println(birthdayGreeting(name = "Rex", age = 2))
+    println(birthdayGreeting(age = 2, name = "Rex"))
+}
+fun birthdayGreeting(name: String, age: Int): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now $age years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
