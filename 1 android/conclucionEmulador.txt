@@ -1,0 +1,19 @@
+Conclusión
+    ¡Felicitaciones! Ejecutaste tu app en Android Emulator.
+
+Resumen
+    Para crear un AVD, abre tu proyecto, haz clic en Tools > Device Manager y usa el 
+    administrador de dispositivos para seleccionar un dispositivo de hardware y una imagen del 
+    sistema.
+    
+    Para ejecutar tu app en un dispositivo virtual, asegúrate de haber creado uno, selecciónalo 
+    en el menú de la barra de herramientas y haz clic en 9dbf17c1342cd95.png.
+    
+Más información
+    Vocabulario de conceptos básicos de Android en Kotlin   https://developer.android.com/courses/android-basics-compose/course?hl=es-419
+    Introducción a Android Studio                           https://developer.android.com/studio/intro?hl=es-419
+    Descripción general de proyectos                        https://developer.android.com/studio/projects?hl=es-419
+    Cómo crear un proyecto                                  https://developer.android.com/studio/projects/create-project
+    Cómo agregar código desde una plantilla                 https://developer.android.com/studio/projects/templates
+    Cómo crear y ejecutar una app                           https://developer.android.com/studio/run
+    Cómo ejecutar apps en Android Emulator                  https://developer.android.com/studio/run/emulator

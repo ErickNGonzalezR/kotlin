@@ -1,0 +1,29 @@
+Conclusión
+
+    Creaste tu app de Feliz cumpleaños.
+
+    En el siguiente codelab, agregarás una foto a tu app y cambiarás la alineación de los 
+    elementos de texto para embellecerla.
+
+Resumen
+    Jetpack Compose es un kit de herramientas moderno para crear IU de Android. Jetpack 
+    Compose simplifica y acelera el desarrollo de IU en Android con menos código, herramientas 
+    potentes y APIs intuitivas de Kotlin.
+    La interfaz de usuario (IU) de una app es lo que ves en la pantalla: texto, imágenes, 
+    botones y muchos otros tipos de elementos.
+    Las funciones de componibilidad son los componentes fundamentales de Compose. Una función 
+    de este tipo es aquella que describe alguna parte de tu IU.
+    La función de componibilidad tiene la anotación @Composable. Esta anotación informa al 
+    compilador de Compose que esta función está diseñada para convertir datos en IU.
+    Los tres elementos de diseño estándar básicos de Compose son Column, Row, y Box. Son 
+    funciones Composable y que toman contenido de este tipo, por lo que puedes colocar 
+    elementos dentro de ellas. Por ejemplo, cada elemento secundario dentro de un Row se 
+    ubicará de forma horizontal uno al lado del otro.
+
+Más información
+
+    Composable                                          https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable?authuser=1
+    Conceptos básicos sobre el diseño de Compose        https://developer.android.com/jetpack/compose/layouts/basics?authuser=1&hl=es-419
+    Densidad de píxeles                                 https://developer.android.com/jetpack/compose/layouts/basics?authuser=1&hl=es-419
+    Texto en Compose                                    https://m3.material.io/foundations/layout/understanding-layout/spacing#6ee9802b-7a76-4a12-b4b2-3782c85b85f6
+    Kotlin para Jetpack Compose                         https://developer.android.com/jetpack/compose/kotlin?authuser=1&hl=es-419

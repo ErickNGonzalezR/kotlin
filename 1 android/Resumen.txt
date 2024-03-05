@@ -1,0 +1,28 @@
+Conclusion
+
+    Aprendiste a usar Android Studio y creaste tu primera app para Android con Compose. 
+    ¡Bien hecho!
+
+    Este codelab es parte del curso Aspectos básicos de Android con Compose. Si quieres obtener 
+    información para ejecutar tu app en el emulador o en un dispositivo físico, consulta los 
+    siguientes codelabs de esta ruta de aprendizaje.
+
+Resumen
+    Para crear un proyecto nuevo, abre Android Studio, haz clic en New Project > Empty Compose 
+    Activity > Next, ingresa un nombre para tu proyecto y, luego, establece su configuración.
+    
+    Si deseas saber cómo se verá tu app, usa el panel Preview.
+    
+    Las funciones que admiten composición son como las funciones normales, pero tienen algunas 
+    diferencias: los nombres de las funciones llevan mayúscula, debes agregar la anotación 
+    @Composable antes de la función y las funciones @Composable no pueden mostrar nada.
+    
+    Se usa un Modifier para aumentar o decorar el elemento que admite composición.
+
+Más información
+    Vocabulario de conceptos básicos de Android en Kotlin   https://developer.android.com/courses/android-basics-compose/course?hl=es-419
+    Introducción a Android Studio                           https://developer.android.com/studio/intro?hl=es-419
+    Descripción general de proyectos                        https://developer.android.com/studio/projects?hl=es-419
+    Cómo crear un proyecto                                  https://developers.google.com/profile/u/103877766598239746761?hl=es-419&utm_source=developer.android.com 
+    Cómo agregar código desde una plantilla                 https://developer.android.com/studio/projects/templates
+    Jetpack Compose                                         https://developer.android.com/jetpack/compose?hl=es-419

@@ -1,0 +1,16 @@
+Conclusión
+    Aprendiste a ejecutar una app en Android Studio en tu dispositivo Android físico.
+
+Resumen
+    Puedes ejecutar apps para Android en tu dispositivo físico con un cable o una conexión 
+    Wi-Fi.
+    Los usuarios de Windows deben instalar un controlador de depuración por USB a fin 
+    de ejecutar apps en su dispositivo físico.
+    Si ejecutas tu app con Wi-Fi, puedes usar un código QR o un código de 6 dígitos para 
+    realizar la vinculación.
+Más información
+    Vocabulario de conceptos básicos de Android en Kotlin   https://developer.android.com/courses/android-basics-compose/course?hl=es-419
+    Cómo ejecutar apps en un dispositivo de hardware        https://developer.android.com/studio/run/device?hl=es-419
+    Cómo instalar controladores USB de OEM                  https://developer.android.com/studio/run/oem-usb#Drivers
+    Cómo obtener el controlador USB de Google               https://developer.android.com/studio/run/win-usb
+    
